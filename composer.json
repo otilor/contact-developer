@@ -1,0 +1,12 @@
+{
+    "name": "gabriel/contact",
+    "description": "Sends email to developer and save contact query in database",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "GabrielFemi\\Contact\\": "src/"
+        }
+    }
+}
