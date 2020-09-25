@@ -7,13 +7,13 @@
     "autoload": {
         "psr-4": {
             "GabrielFemi\\Contact\\": "src/"
-        },
-        "extra": {
-            "laravel": {
-                "providers": [
-                    "GabrielFemi\\Contact\\ContactServiceProvider"
-                ]
-            }
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GabrielFemi\\Contact\\ContactServiceProvider"
+            ]
         }
     }
 }
