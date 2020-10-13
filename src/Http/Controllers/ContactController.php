@@ -10,11 +10,18 @@ use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
+
+    public function index()
+    {
+        return view('contact::contact');
+    }
+
     public function send(Request $request)
     {
         Mail::to(config('contact.addresses.developer'))
             ->send(new ContactDeveloperMail($request->message, $request->name));
         Contact::create($request->all());
-        redirect(route('contact'));
+
+        return redirect(route('contact'));
     }
 }
